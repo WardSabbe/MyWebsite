@@ -10,14 +10,13 @@
   
   /* Header/logo Title */
   .header {
-    padding: 80px;
-    text-align: left;
+    padding: 20px;
+    text-align: left center;
     color: white;
     
   }
   .header{
     background-image: url(uve-sanchez-9DRX_cW48RQ-unsplash.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 35%;
   }
@@ -25,7 +24,7 @@
   /* Increase the font size of the heading */
   .header h1 {    font-size: 60px;  }
 
-  .header p {    font-size: 20px;  }
+  .header p {     font-size: 20px;  }
   
   /* Style the top navigation bar */
   .navbar {
@@ -43,7 +42,7 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
-
+    font-size: 15px;
   }
   
   /* Right-aligned link */
@@ -70,6 +69,7 @@
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
   }
   
   /* Create two unequal columns that sits next to each other */
@@ -80,6 +80,7 @@
     background-color: rgb(70, 91, 65);
     color: #ffffff ;
     padding: 20px;
+    width: 20%;
   }
 
   .side p {
@@ -89,11 +90,19 @@
   /* Main column */
   .main {   
     -ms-flex: 70%; /* IE10 */
-    flex: 80%;
+    flex: 65%;
     background-color: white;
-    padding: 20px;
+    padding: 20px 60px;
+    font-size: 15px;
+    width: 70%;
   }
   
+.sidde {
+  padding: 20px;
+  flex: 10%;
+  width: 10%;
+}
+
   /* Fake image, just for this example */
   .fakeimg {
     background-color: #aaa;
@@ -102,10 +111,19 @@
     object-fit: cover;
     object-position: center right;
   }
+
+  .icon {
+    background-color: #aaa;
+    width: 100%;
+    padding: 0px;
+    object-fit: cover;
+    object-position: center right;
+
+  }
   
   /* Footer */
   .footer {
-    padding: 30px;
+    padding: 20px;
     text-align: end;
   }
 
