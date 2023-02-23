@@ -11,15 +11,21 @@
   /* Header/logo Title */
   .header {
     padding: 80px;
-    text-align: center;
-    background: #1abc9c;
+    text-align: left;
     color: white;
+    
+  }
+  .header{
+    background-image: url(uve-sanchez-9DRX_cW48RQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
   }
   
   /* Increase the font size of the heading */
-  .header h1 {
-    font-size: 40px;
-  }
+  .header h1 {    font-size: 60px;  }
+
+  .header p {    font-size: 20px;  }
   
   /* Style the top navigation bar */
   .navbar {
@@ -47,14 +53,14 @@
   
   /* Change color on hover */
   .navbar a:hover {
-    background-color: #ddd;
+    background-color: #5f8056;
     color: black;
   }
   
   /* Change color on active */
   .navbar a:active {
-    background-color: rgb(92, 138, 245);
-    color: black;
+    background-color: #5f8056
+    color black;
   }
   
 
@@ -70,15 +76,20 @@
   /* Sidebar/left column */
   .side {
     -ms-flex: 30%; /* IE10 */
-    flex: 30%;
-    background-color: #f1f1f1;
+    flex: 20%;
+    background-color: rgb(70, 91, 65);
+    color: #ffffff ;
     padding: 20px;
+  }
+
+  .side p {
+    font-size: 15px;
   }
   
   /* Main column */
   .main {   
     -ms-flex: 70%; /* IE10 */
-    flex: 70%;
+    flex: 80%;
     background-color: white;
     padding: 20px;
   }
@@ -87,14 +98,23 @@
   .fakeimg {
     background-color: #aaa;
     width: 100%;
-    padding: 20px;
+    padding: 0px;
+    object-fit: cover;
+    object-position: center right;
   }
   
   /* Footer */
   .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
+    padding: 30px;
+    text-align: end;
+  }
+
+  .footer{
+    background-image: url(tanner-vote-rKgb2jb7wk0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
+    color: white;
   }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
