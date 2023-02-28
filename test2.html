@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover Text on Image</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+        
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+		main {
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		.image-container {
+			position: relative;
+			margin: 10px;
+			overflow: hidden;
+			border-radius: 5px;
+		}
+		.image-container:hover .text-overlay {
+			opacity: 1;
+		}
+		.image-container img {
+			max-width: 100%;
+			height: auto;
+		}
+		.text-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #fff;
+			padding: 20px;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Hover Text on Image</h1>
+	</header>
+	
+	<main>
+		<a href="school.html"><div class="image-container"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/school.jpg"></a>
+            <div class="text-overlay">
+                <h2>Image 1</h2>
+            </div>
+		<div class="image-container">
+			<img src="image2.jpg" alt="Image 2">
+			<div class="text-overlay">
+				<h2>Image 2</h2>
+				<p>This is some text that appears when you hover over the image.</p>
+			</div>
+		</div>
+		<div class="image-container">
+			<img src="image3.jpg" alt="Image 3">
+			<div class="text-overlay">
+				<h2>Image 3</h2>
+				<p>This is some text that appears when you hover over the image.</p>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
