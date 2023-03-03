@@ -27,40 +27,19 @@
   .header p {     font-size: 20px;  }
   
   /* Style the top navigation bar */
-  .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    width: 100%;
-  }
+  .navbar {    overflow: hidden;    background-color: #333;    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
   
-  /* Style the navigation bar links */
-  .navbar a {
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  
-  /* Right-aligned link */
-  .navbar a.right {
-    float: right;
-  }
-  
-  /* Change color on hover */
-  .navbar a:hover {
-    background-color: #5f8056;
-    color: black;
-  }
-  
-  /* Change color on active */
-  .navbar a:active {
-    background-color: #5f8056
-    color black;
-  }
+  .navbarproject {    overflow: hidden;    background-color: rgb(0, 42, 6);    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
+
+  /* Style the navigation bar links */  .navbarproject a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
+    /* Right-aligned link */      .navbarproject a.right {    float: right;  }
+    /* Change color on hover */   .navbarproject a:hover {    background-color: #5f8056;    color: black;  }
+    /* Change color on active */  .navbarproject a:active {    background-color: #5f8056    color black;  }
+
+  /* Style the navigation bar links */  .navbar a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
+    /* Right-aligned link */      .navbar a.right {    float: right;  }
+    /* Change color on hover */   .navbar a:hover {    background-color: #5f8056;    color: black;  }
+    /* Change color on active */  .navbar a:active {    background-color: #5f8056    color black;  }
   
 
   /* Column container */
@@ -82,6 +61,17 @@
     padding: 20px;
     width: 20%;
   }
+
+  .sideproject {
+    -ms-flex: 20%; /* IE10 */
+    flex: 10%;
+    background-color: rgb(0, 42, 6);
+    color: #ffffff ;
+    padding: 10px;
+    width: 10%;
+  }
+
+  
 
   .side p {
     font-size: 15px;
@@ -133,6 +123,14 @@
     object-position: center right;
 
   }
+
+  .icon a:hover {
+    transform: scale(1.05);
+  }
+
+  .icon.hover {
+    transform: scale(1.05);
+  }
   
   /* Footer */
   .footer {
@@ -164,9 +162,9 @@
   }
 
 
-img:hover {
+/*img:hover {
   transform: scale(1.05);
-}
+}*/
 
 img {
   max-width: 100%;
@@ -176,35 +174,3 @@ img {
 }
 
 
-
-/*.image-container {
-  position: relative;
-  margin: 0;
-  overflow: hidden;
-  border-radius: 5px;
-}
-.image-container:hover .text-overlay {
-  opacity: 1;
-}
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-.text-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  width: 300px;
-  height: 200px%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 24px;
-}*/
