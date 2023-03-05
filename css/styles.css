@@ -29,7 +29,7 @@
   /* Style the top navigation bar */
   
   
-  .navbarproject {    overflow: hidden;    background-color: rgb(0, 42, 6);    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
+  .navbarproject {    overflow: hidden;    background-color: rgb(0, 0, 0);    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
   .navbarproject a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
   .navbarproject a.right {    float: right;  }
   .navbarproject a:hover {    background-color: #5f8056;    color: black;  }
@@ -81,13 +81,32 @@
     flex: 75%;
     color: #ffffff ;
     background-color: rgb(70, 70, 70);
-    padding: 20px 60px;
+    padding: 20px 30px 100px;
     font-size: 15px;
     width: 70%;
   }
 
+  .mainn{
+    width: 100%;
+    float: center;
+    background-color: white;
+  }
+  .maintext {   
+    float: left;
+    width: 80%;
+    padding: 10px;
+    color: white;
+  }
+
+  .mainleeg { 
+    float: right;  
+    width: 20%;
+    padding: 10px;
+    color: white;
+  }
+
   .mainproject {   
-    -ms-flex: 65%; /* IE10 */
+    -ms-flex: 65%; 
     flex: 75%;
     background-color: rgb(44, 44, 44);
     padding: 20px 60px;
@@ -114,28 +133,211 @@
     width: 100%;
     padding: 0px;
     object-fit: cover;
+    object-position: center right;
+  }
+
+  .fakeimg2:hover{
+    transform: translatex(150%) scale(300%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .icons {
+    height:20px;
+    width:20px;
+    padding: 0px;
+    object-fit: cover;
     object-position: center center;
   }
-  .fakeimg3 {
-    width: 100%;
-    padding: 0px;
-    object-fit: cover;
-    object-position: top;
-  }
 
-  .icon {
-    background-color: #aaa;
-    width: 100%;
-    padding: 0px;
-    object-fit: cover;
-    object-position: center right;
-
+  .icons:hover{
+    transform: translatex(150%) scale(300%);
   }
 
   .footer {    overflow: hidden;    background-color: #333;   width: 100%;  }
   .footer a {    float: center;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: wavy;    font-size: 15px;  }
   .footer a:hover {    background-color: #5f8056;    color: black;  }
   .footer a:active {    background-color: #ffffff;    color: black;  }
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container {
+  position: relative;
+  width: 93%;
+  height: 100%;
+  margin: 3.4%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.container:hover{
+  transform: scale(1.10);
+  transition: transform 0.3s ease-in-out;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  font-size: 40px;
+  padding: 20px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 5px;
+
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.scholen:hover{
+  transform: scale(150%) translatex(25%);
+  transition: transform 0.3s ease-in-out;
+}
+.mainn{
+  width: 100%;
+  background-color: #0a9265;
+}
+.project{
+  width: 100%;
+}
+.projectrow1 {
+  float: left;
+  width:100%;
+  border-radius: 10px;
+  background-color: #ffffff; 
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+.projectrow10 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 3px;
+}
+.projectrow2 {
+  float: left;
+  width: 49%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 3px;
+}
+
+.projectrowtussen {
+  float: left;
+  width: 2%;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.projectrow3 {
+  float: right;
+  width: 49%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 3px;
+}
+
+
+
+
+
+
+
+.gegevens p {
+  padding-left: 30%;
+  font-size: x-large;
+}
+
+#tekst {
+  text-align: center;
+}
+
+.contactboxthing {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px;
+
+}
+
+.col1 {
+  float: right;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.col2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.gegevens p {
+  padding-left: 30%;
+  font-size: x-large;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 180px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #666;
+}
+
+
+
 
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -152,44 +354,3 @@
       width: 100%;
     }
   }
-
-
-/*img:hover {
-  transform: scale(1.05);
-}*/
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.container {
-  position: relative;
-  width: 300px;
-  height: 200px;
-  margin: 20px;
-  overflow: hidden;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  font-size: 20px;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container:hover .overlay {
-  opacity: 1;
-}
