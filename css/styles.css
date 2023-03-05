@@ -27,19 +27,19 @@
   .header p {     font-size: 20px;  }
   
   /* Style the top navigation bar */
-  .navbar {    overflow: hidden;    background-color: #333;    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
+  
   
   .navbarproject {    overflow: hidden;    background-color: rgb(0, 42, 6);    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
+  .navbarproject a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
+  .navbarproject a.right {    float: right;  }
+  .navbarproject a:hover {    background-color: #5f8056;    color: black;  }
+  .navbarproject a:active {    background-color: #5f8056    color black;  }
 
-  /* Style the navigation bar links */  .navbarproject a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
-    /* Right-aligned link */      .navbarproject a.right {    float: right;  }
-    /* Change color on hover */   .navbarproject a:hover {    background-color: #5f8056;    color: black;  }
-    /* Change color on active */  .navbarproject a:active {    background-color: #5f8056    color black;  }
-
-  /* Style the navigation bar links */  .navbar a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
-    /* Right-aligned link */      .navbar a.right {    float: right;  }
-    /* Change color on hover */   .navbar a:hover {    background-color: #5f8056;    color: black;  }
-    /* Change color on active */  .navbar a:active {    background-color: #5f8056    color black;  }
+  .navbar {    overflow: hidden;    background-color: #333;    position: fixed; /* Set the navbar to fixed position */    width: 100%;  }
+  .navbar a {    float: right;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: none;    font-size: 15px;  }
+  .navbar a.right {    float: right;  }
+  .navbar a:hover {    background-color: #5f8056;    color: black;  }
+  .navbar a:active {    background-color: #5f8056    color black;  }
   
 
   /* Column container */
@@ -56,7 +56,7 @@
   .side {
     -ms-flex: 20%; /* IE10 */
     flex: 10%;
-    background-color: rgb(70, 91, 65);
+    background-color: rgb(0, 0, 0);
     color: #ffffff ;
     padding: 20px;
     width: 20%;
@@ -65,13 +65,11 @@
   .sideproject {
     -ms-flex: 20%; /* IE10 */
     flex: 10%;
-    background-color: rgb(0, 42, 6);
+    background-color: rgb(56, 56, 56);
     color: #ffffff ;
-    padding: 10px;
-    width: 10%;
+    padding: 20px;
+    width: 20%;
   }
-
-  
 
   .side p {
     font-size: 15px;
@@ -81,7 +79,17 @@
   .main {   
     -ms-flex: 65%; /* IE10 */
     flex: 75%;
-    background-color: white;
+    color: #ffffff ;
+    background-color: rgb(70, 70, 70);
+    padding: 20px 60px;
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .mainproject {   
+    -ms-flex: 65%; /* IE10 */
+    flex: 75%;
+    background-color: rgb(44, 44, 44);
     padding: 20px 60px;
     font-size: 15px;
     width: 70%;
@@ -124,27 +132,11 @@
 
   }
 
-  .icon a:hover {
-    transform: scale(1.05);
-  }
+  .footer {    overflow: hidden;    background-color: #333;   width: 100%;  }
+  .footer a {    float: center;    display: block;    color: white;    text-align: center;    padding: 14px 20px;    text-decoration: wavy;    font-size: 15px;  }
+  .footer a:hover {    background-color: #5f8056;    color: black;  }
+  .footer a:active {    background-color: #ffffff;    color: black;  }
 
-  .icon.hover {
-    transform: scale(1.05);
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: end;
-  }
-
-  .footer{
-    background-image: url(tanner-vote-rKgb2jb7wk0-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 35%;
-    color: white;
-  }
   
   /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 700px) {
@@ -173,4 +165,31 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
+.container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+}
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 20px;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
