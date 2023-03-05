@@ -281,8 +281,23 @@ img {
 }
 
 
+.random1deel {
+  float: left;
+  margin: 1%;
+  width: 46%;
+  border-radius: 10px;
+  background-color: #ffffff; 
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
 
 
+.mainborder{
+  float: left;
+  margin: 1%;
+  width: 47%
+}
 
 
 
