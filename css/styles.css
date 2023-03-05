@@ -11,20 +11,48 @@
   /* Header/logo Title */
   .header {
     padding: 20px;
-    text-align: left center;
-    color: white;
-    
-  }
-  .header{
+    text-align: center;
+    text-transform: uppercase;
     background-image: url(uve-sanchez-9DRX_cW48RQ-unsplash.jpg);
+    opacity: 1;
     background-size: cover;
     background-position: 35%;
+    color: rgb(26, 48, 17);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .roller {
+    height: 4rem;
+    line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d572f;
+    
   }
   
-  /* Increase the font size of the heading */
-  .header h1 {    font-size: 60px;  }
+  .roller #rolltext {
+    position: absolute;
+    
+    top: 0;
+    animation: slide 5s infinite;
+  }
 
-  .header p {     font-size: 20px;  }
+  @keyframes slide {
+    0% {top: 0;}
+    25% {top: -4rem;}
+    50% {top: -8rem;}
+    72.5% {top: -12.25rem;}
+  }
+
+  
+  /* Increase the font size of the heading */
+  .header h1 {    font-size: 60px;border-radius: 15px; background-color: rgba(255, 255, 255, 0.5); }
   
   /* Style the top navigation bar */
   
