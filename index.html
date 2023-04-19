@@ -19,6 +19,8 @@
         <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
         <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
         <a href="index.html">Home</a>
+        <b onclick="darkMode()">Darkmode</b>
+        <b onclick="lightMode()">Lightmode</b>
     </div>
 
     <!--shift+alt+f voor auto align-->
@@ -44,24 +46,6 @@
             <img class="profielfoto" style="height:200px;" src="img/Ward_Sabbe.jpg">
             <p>Hey, I'm Ward. An industrial product desginer graduated at Howest 2022.
                 Now I am studying for my masters degree in Industrial Design at Ugent, campus Kortrijk. </p>
-            <!--<h3>Skills</h3>
-            <p>-3D printing<br>-Photography<br></p>
-            <h3>Tools</h3>
-            <img class="icons" src="img/light.png"> Lightroom <br>
-            <img class="icons" src="img/photoshop.png"> Photoshop <br>
-            <img class="icons" src="img/illustrator.png"> Illustrator <br>
-            <img class="icons" src="img/indesign.png"> Indesign <br>
-            <img class="icons" src="img/pr.png"> Premiere Pro <br>
-            <img class="icons" src="img/cd.png"> XD <br>
-            <img class="icons" src="img/ink.png"> Inkscape <br>
-            <img class="icons" src="img/Fusion360.png"> Fusion360 <br>
-            <img class="icons" src="img/NX-Logo.svg"> Siemens NX <br>
-            <img class="icons" src="img/office.png"> Office 365 <br>
-            <img class="icons" src="img/notion.png"> Notion <br>
-            <img class="icons" src="img/arduino.png"> Arduino <br>
-            <img class="icons" src="img/c++.png"> C++ <br>
-            <img class="icons" src="img/grasshopper.jfif"> Grasshopper <br>
-            <br><br><br>-->
         </div>
 
         <div class="main">
@@ -250,12 +234,27 @@
 
 
     <div class="footer">
+
+        <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
+        <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
+        <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
+        <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
     
-    <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-    <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-    <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-    <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-</div>
+
+
+    </div>
+    <script>
+        function darkMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+        }
+        function lightMode() {
+            var element = document.body;
+            var content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+        }
+    </script>
 
 </body>
 

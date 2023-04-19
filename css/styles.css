@@ -25,7 +25,7 @@ body {
 }
 
 .roller {
-  height: 4rem;
+  height: 4rem;/*unit of measurement that's based on the font size of the root element, 4keer de font grootte*/
   line-height: 4rem;
   position: relative;
   overflow: hidden;
@@ -72,13 +72,11 @@ body {
 .navbarproject {
   overflow: hidden;
   background-color: rgb(0, 0, 0);
-  position: fixed;
-  /* Set the navbar to fixed position */
+  position: fixed;  /*navigation bar vast zetten*/
   width: 100%;
 }
 
-.navbarproject a {
-  float: right;
+.navbarproject a,.navbarproject b,.navbar a,.navbar b {
   display: block;
   color: white;
   text-align: center;
@@ -86,21 +84,6 @@ body {
   text-decoration: none;
   font-size: 15px;
 }
-
-.navbarproject a.right {
-  float: right;
-}
-
-.navbarproject a:hover {
-  background-color: #5f8056;
-  color: black;
-}
-
-.navbarproject a:active {
-  background-color: #5f8056;
-  color: black;
-}
-
 
 .navbar {
   overflow: hidden;
@@ -110,30 +93,25 @@ body {
   z-index: 100;
 }
 
-.navbar a {
-  float: right;
-  display: block;
-  color: white;
+.navbar a,.navbar b {
   background-color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  font-size: 15px;
 }
 
-.navbar a.right {
-  float: right;
-}
+.navbar a,.navbarproject a{float: right;}
 
-.navbar a:hover {
+.navbar b,.navbarproject b{float: left;}/*b is voor light and darkmode*/
+
+
+.navbar a:hover,.navbar b:hover,.navbarproject a:hover,.navbarproject b:hover {
   background-color: #5f8056;
   color: black;
 }
 
-.navbar a:active {
-  background-color: #5f8056;
+.navbar a:active,.navbar b:active,.navbarproject a:active,.navbarproject b:active {
+  background-color: #ffffff;
   color: black;
 }
+
 
 /*--Column container----------------------------------------------------------------------*/
 
@@ -174,19 +152,29 @@ body {
 
 /*---------------------------------------------------------------------------------------*/
 
+.dark-mode {
+  background-color:rgb(70, 70, 70);
+  color: rgb(255, 255, 255);
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
 .main {
   width: 80%;
-  color: #ffffff;
-  background-color: rgb(70, 70, 70);
+  /*color: #ffffff;
+  background-color: rgb(70, 70, 70);*/
   padding: 20px 30px 100px;
   font-size: 15px;
 }
+
 
 .maintext {
   float: left;
   width: 80%;
   padding: 10px;
-  color: white;
+  /*color: white;*/
 }
 
 .mainleeg {
@@ -199,7 +187,7 @@ body {
 .mainproject {
   -ms-flex: 65%;
   flex: 75%;
-  background-color: rgb(44, 44, 44);
+  /*background-color: rgb(44, 44, 44);*/
   padding: 20px 60px;
   font-size: 15px;
   width: 70%;
@@ -334,8 +322,7 @@ img {
 .projectrow10 {float: left;width: 100%;height: 100%;border-radius: 10px;padding: 3px;}*/
 
 /*3 rows op de home pagina onder intro*/
-.projectrow2 {
-  float: left;
+.projectrow2,.projectrow3 {
   width: 49%;
   border-radius: 10px;
   background-color: #ffffff;
@@ -350,18 +337,12 @@ img {
   padding: 3px;
 }
 
-.projectrow3 {
-  float: right;
-  width: 49%;
-  border-radius: 10px;
-  background-color: #ffffff;
-  align-items: center;
-  padding: 3px;
-}
+.projectrow2 {float: left;}
+.projectrow3 {float: right;}
 /*---------------------------------------------------------------------------------------*/
 
 
-
+/* waarin projcten komen bij de random projecten*/
 .random1deel {
   float: left;
   margin: 1%;
@@ -373,7 +354,7 @@ img {
   text-align: center;
 }
 
-.gegevens p {
+/*.gegevens p {
   padding-left: 30%;
   font-size: x-large;
 }
@@ -404,7 +385,7 @@ img {
 }
 
 
-/*.gegevens p {
+.gegevens p {
   padding-left: 30%;
   font-size: x-large;
 }
@@ -476,7 +457,7 @@ form input[type="submit"]:hover {
 }
 
 
-/* voor de duwbare box dingen bij werk ervaring */
+/* voor de duwbare box bij werk ervaring */
 .box {
   display: inline-block;
   padding: 5px;
@@ -488,3 +469,5 @@ form input[type="submit"]:hover {
 .box:hover {
   background-color: transparent;
 }
+
+
