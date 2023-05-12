@@ -23,6 +23,8 @@
         <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
         <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
         <a href="index.html">Home</a>
+        <b onclick="darkMode()">Darkmode</b>
+        <b onclick="lightMode()">Lightmode</b>
     </div>
     <!--main------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -37,13 +39,15 @@
                 <br><img style="height: 300px;" src="img/klok4.jpeg">
                 <img style="height: 300px;" src="img/klok4.jpeg">
                 <p>a project where i did reaserach on how a parametric software can help
-                    with recycling and reusing wast.
+                    with recycling and reusing waste.
                 </p>
             </div>
 
-            <!--<div class="random1deel">
-                <br><div id="robot"></div>
-            </div>-->
+            <div class="random1deel">
+                <br>
+                <div id="robot"></div>
+                <p>robot with some small interaction. An assigment for a course in university.
+            </div>
 
             <div class="random1deel">
                 <br>
@@ -53,8 +57,11 @@
             </div>
 
             <div class="random1deel">
+                <div class="projectcontainer"><a href="game2.html">
                 <img style="height: 300px;" src="img/klok3.jpg">
-            </div>
+                        </a>
+                
+            </div></div>
 
             <div class="random1deel">
                 <img style="height: 300px;" src="img/klok4.jpeg">
@@ -65,6 +72,18 @@
             </div>
 
         </div>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+            }
+            function lightMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+            }
+        </script>
 
 
     </div>

@@ -18,7 +18,9 @@
         <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
         <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
         <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="index.html">Home</a>
+        <a href="index.html">Home</a>        
+        <b onclick="darkMode()">Darkmode</b>
+        <b onclick="lightMode()">Lightmode</b>
     </div>
  <!--main------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -49,10 +51,20 @@
             <div class="mainborder"><img src="img/retrogame8.jpg"></div>
             <div class="mainborder"><img src="img/retrogame3.jpg"></div>
             
-            <div class="mainborder"><img src="img/retrogame5.jpg"></div>
-
-                
+            <div class="mainborder"><img src="img/retrogame5.jpg"></div>      
         </div>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+            }
+            function lightMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+            }
+        </script>
 
 
     </div>

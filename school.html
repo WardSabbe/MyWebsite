@@ -19,12 +19,15 @@
         <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
         <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
         <a href="index.html">Home</a>
+        <b onclick="darkMode()">Darkmode</b>
+        <b onclick="lightMode()">Lightmode</b>
     </div>
 
  <!--header------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="header">
-        <img src="img/eigen logo.svg"style="height: 200px;">
+        <br><br>
+        <img src="img/eigen logo.png"style="height: 200px;">
     </div>
 
  <!--main------------------------------------------------------------------------------------------------------------------------------------------->
@@ -33,7 +36,7 @@
         <div class="side">
             <h2>About Me</h2>
             <!--<h5>Photo of me:</h5>-->
-            <img class="fakeimg" style="height:200px;" src="img/Ward_Sabbe.jpg">
+            <img class="profielfoto" style="height:200px;" src="img/Ward_Sabbe.jpg">
             <p>Hey, I'm an industrial product desginer graduated at Howest 2022. 
                 Now I am studying for my masters degree in Industrial Design at Ugent, campus Kortrijk. </p><br>
             <h3>Skills</h3>
@@ -69,6 +72,18 @@
             <a href="https://www.ugent.be/campus-kortrijk/nl/opleidingen/industrieel-ontwerpen"><img class="scholen" style="height:170px;;" src="img/logo_ugent.png" alt="Image 2"></a>
             <h4>Master, Industrial design Ugent Kotrijk</h4> <p>2022-now<br>An education with an eye for product manufacturing, sustainability and engineering<br>           
         </div>
+        <script>
+            function darkMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "dark-mode";
+            }
+            function lightMode() {
+                var element = document.body;
+                var content = document.getElementById("DarkModetext");
+                element.className = "light-mode";
+            }
+        </script>
 
 
     </div>

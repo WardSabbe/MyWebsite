@@ -25,7 +25,8 @@ body {
 }
 
 .roller {
-  height: 4rem;/*unit of measurement that's based on the font size of the root element, 4keer de font grootte*/
+  height: 4rem;
+  /*unit of measurement that's based on the font size of the root element, 4keer de font grootte*/
   line-height: 4rem;
   position: relative;
   overflow: hidden;
@@ -45,21 +46,10 @@ body {
 }
 
 @keyframes slide {
-  0% {
-    top: 0;
-  }
-
-  25% {
-    top: -4rem;
-  }
-
-  50% {
-    top: -8rem;
-  }
-
-  72.5% {
-    top: -12.25rem;
-  }
+  0% {top: 0;}
+  25% {top: -4rem;}
+  50% {top: -8rem;}
+  72.5% {top: -12.25rem;}
 }
 
 .header h1 {
@@ -67,16 +57,21 @@ body {
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.5);
 }
+
 /*--Style the top navigation bar-------------------------------------------------------------------------------------*/
 
 .navbarproject {
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
-  position: fixed;  /*navigation bar vast zetten*/
+  background-color: var(--bg-color-nav);
+  position: fixed;
+  /*navigation bar vast zetten*/
   width: 100%;
 }
 
-.navbarproject a,.navbarproject b,.navbar a,.navbar b {
+.navbarproject a,
+.navbarproject b,
+.navbar a,
+.navbar b {
   display: block;
   color: white;
   text-align: center;
@@ -93,25 +88,38 @@ body {
   z-index: 100;
 }
 
-.navbar a,.navbar b {
+.navbar a,
+.navbar b {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar a,.navbarproject a{float: right;}
+.navbar a,
+.navbarproject a {
+  float: right;
+}
 
-.navbar b,.navbarproject b{float: left;}/*b is voor light and darkmode*/
+.navbar b,
+.navbarproject b {
+  float: left;
+}
 
+/*b is voor light and darkmode*/
 
-.navbar a:hover,.navbar b:hover,.navbarproject a:hover,.navbarproject b:hover {
-  background-color: #5f8056;
+.navbar a:hover,
+.navbar b:hover,
+.navbarproject a:hover,
+.navbarproject b:hover {
+  background-color: rgb(93, 123, 84,0.7);
   color: black;
 }
 
-.navbar a:active,.navbar b:active,.navbarproject a:active,.navbarproject b:active {
-  background-color: #ffffff;
+.navbar a:active,
+.navbar b:active,
+.navbarproject a:active,
+.navbarproject b:active {
+  background-color: rgb(255, 255, 255,0.5);;
   color: black;
 }
-
 
 /*--Column container----------------------------------------------------------------------*/
 
@@ -129,42 +137,58 @@ body {
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
+
+:root {
+  --bg-color-side: rgb(50, 50, 50);
+  --bg-color-main: rgb(70, 70, 70);
+  --bg-color-row: rgb(255, 255, 255);
+  --bg-color-nav: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+}
+
+.dark-mode {
+  --bg-color-side: rgb(50, 50, 50);
+  --bg-color-main: rgb(70, 70, 70);
+  --text-color: rgb(255, 255, 255);
+  --bg-color-nav: rgb(0, 0, 0);
+  --bg-color-row: rgb(255, 255, 255);
+}
+
+.light-mode {
+  --bg-color-side: rgb(200, 200, 200);
+  --bg-color-main: rgb(255, 255, 255);
+  --bg-color-row: rgb(230, 230, 230);
+  --bg-color-nav: rgb(100, 100, 100);
+  --text-color: black;
+}
+
 .side {
-  -ms-flex: 20%;
   flex: 20%;
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
+  background-color: var(--bg-color-side);
+  color: var(--text-color);
   padding: 20px;
 }
 
 .sideproject {
-  -ms-flex: 20%;
   flex: 10%;
-  background-color: rgb(56, 56, 56);
-  color: #ffffff;
-  padding: 20px;
   width: 20%;
+  background-color: var(--bg-color-side);
+  color: var(--text-color);
+  padding: 20px;
 }
 
-.side p {
+.side p ,.sideproject{
   font-size: 15px;
 }
 
 /*---------------------------------------------------------------------------------------*/
 
-.dark-mode {
-  background-color:rgb(70, 70, 70);
-  color: rgb(255, 255, 255);
-}
-.light-mode {
-  background-color: white;
-  color: black;
-}
-
 .main {
   width: 80%;
   /*color: #ffffff;
   background-color: rgb(70, 70, 70);*/
+  color: var(--text-color);
+  background-color: var(--bg-color-main);
   padding: 20px 30px 100px;
   font-size: 15px;
 }
@@ -188,6 +212,8 @@ body {
   -ms-flex: 65%;
   flex: 75%;
   /*background-color: rgb(44, 44, 44);*/
+  color: var(--text-color);
+  background-color: var(--bg-color-main);
   padding: 20px 60px;
   font-size: 15px;
   width: 70%;
@@ -209,7 +235,7 @@ body {
 }
 
 .profielfoto:hover {
-  transform: translatex(150%) scale(300%);
+  transform: translatex(17%) scale(130%);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -264,7 +290,8 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-.projectcontainer {/*plaats voor foto project*/
+.projectcontainer {
+  /*plaats voor foto project*/
   position: relative;
   width: 93%;
   height: 100%;
@@ -278,7 +305,8 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-.overlay {/*overlay als je erover hovert*/
+.overlay {
+  /*overlay als je erover hovert*/
   position: absolute;
   top: 0;
   left: 0;
@@ -308,7 +336,8 @@ img {
 
 /*---------------------------------------------------------------------------------------*/
 
-.Intro {    /*intro waarin text en een lege kolom komt*/
+.Intro {
+  /*intro waarin text en een lege kolom komt*/
   width: 100%;
   background-color: #0a9265;
 }
@@ -322,10 +351,12 @@ img {
 .projectrow10 {float: left;width: 100%;height: 100%;border-radius: 10px;padding: 3px;}*/
 
 /*3 rows op de home pagina onder intro*/
-.projectrow2,.projectrow3 {
+.projectrow2,
+.projectrow3 {
   width: 49%;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-color-row);
+  /*background-color: #ffffff;*/
   align-items: center;
   padding: 3px;
 }
@@ -337,8 +368,14 @@ img {
   padding: 3px;
 }
 
-.projectrow2 {float: left;}
-.projectrow3 {float: right;}
+.projectrow2 {
+  float: left;
+}
+
+.projectrow3 {
+  float: right;
+}
+
 /*---------------------------------------------------------------------------------------*/
 
 
@@ -348,7 +385,7 @@ img {
   margin: 1%;
   width: 46%;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: var(--bg-color-row);
   padding: 10px;
   color: black;
   text-align: center;
@@ -443,6 +480,7 @@ form input[type="submit"]:hover {
   .row {
     flex-direction: column;
   }
+
   .side {
     max-width: 100%;
   }
@@ -466,8 +504,165 @@ form input[type="submit"]:hover {
   text-decoration: none;
   border-radius: 5px;
 }
+
 .box:hover {
   background-color: transparent;
 }
 
 
+
+
+
+
+.game{
+  width: 90%;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+#character{
+  width: 20px;
+  height: 50px;
+  background-color: rgb(61, 61, 61);
+  position:relative;
+  top: 150px;
+}
+
+.animate{
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+#block{
+  background-color: rgb(0, 0, 0);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  left: 100%;
+  animation: block 1s infinite linear;
+}
+
+@keyframes block{
+  0%{left: 100%}
+  100%{left: -20px}
+}
+
+
+
+
+#mazeContainer {
+  top: 15px;
+  opacity: 0;
+  display: inline-block;
+  margin: auto;
+  border-radius: 10px;
+}
+#mazeContainer #mazeCanvas {
+  margin: 0;
+  display: block;
+  border: solid 2px black;
+  height: 400px;
+}
+input, select {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.30);
+  height: 45px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  appearance: none;
+}
+input:hover, select:hover {
+background-color: rgba(0, 0, 0, 0.70);
+}
+input:active, select:active {
+background-color: black;
+}
+input:focus, select:focus {
+outline: none;
+}
+.custom-select {
+display: inline-block;
+}
+.custom-select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: 125px center;
+}
+#Message-Container {
+  visibility: hidden;
+  color: white;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  z-index: 1;
+}
+#Message-Container #message {
+  width: 300px;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+}
+#page {
+text-align: center;
+height: auto;
+width: auto;
+margin: auto;
+}
+#page #menu {
+  margin: auto;
+  padding: 10px;
+  height: 65px;
+  box-sizing: border-box;
+}
+#page #menu h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 3.2rem;
+}
+#page #view {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+.border {
+  border: 10px black solid;
+  border-radius: 10px;
+}
+
+#instructions {
+  margin-top: 425px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
