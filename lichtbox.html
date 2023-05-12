@@ -6,27 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
- <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="navbarproject">
-        <a href="https://www.instagram.com/ws_designandmore/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
-        <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
-        <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
-        <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="index.html">Home</a>
-        <b onclick="darkMode()">Darkmode</b>
-        <b onclick="lightMode()">Lightmode</b>
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
     </div>
- <!--main------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--main------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="row">
         <div class="sideproject"><br><br>
-            <img src="img/eigen logo.png"style="height:150px;" position: fixed;><br><br><br><br>
+            <img src="img/eigen logo.png" style="width: 90%;" position: center;>
             <h1>Lightbox</h1> 
             <p>Create your own world. It is made out of lasercut en 3d-printed parts. 
 				The Lightbox uses a ATtiny85 to operate. <br><br>
@@ -44,37 +38,22 @@
         </div>
 
         <div class="main">
-			<img style="width: 100%;"src="img/lichtbox3.png">
-            <div class="mainborder"><img src="img/lichtbox2.jpg"></div>
-            <div class="mainborder"><img src="img/lichtbox4.jpg"></div>
-            <div class="mainborder"><img src="img/lichtbox1.jpg"></div>   
+			<img style="width: 100vh;"src="img/lichtbox3.png">
+            <img style="width: 100vh;"src="img/lichtbox2.jpg">
+            <img style="width: 100vh;"src="img/lichtbox4.jpg">
+            <img style="width: 100vh;"src="img/lichtbox1.jpg">
         </div>
 
-        <script>
-            function darkMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "dark-mode";
-            }
-            function lightMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "light-mode";
-            }
-        </script>
+ 
+        <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="footer">
+            <script>$(function () { $(".footer").load("footer.html"); });</script>
+        </div>
 
 
+        <script src="toggle.js"></script>
     </div>
-
- <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
-
- <div class="footer">
-    
-    <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-    <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-    <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-    <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-</div>
 
 </body>
 

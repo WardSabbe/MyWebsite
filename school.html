@@ -6,28 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
- <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="navbarproject">
-        <a href="https://www.instagram.com/ws_designandmore/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
-        <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
-        <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
-        <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="index.html">Home</a>
-        <b onclick="darkMode()">Darkmode</b>
-        <b onclick="lightMode()">Lightmode</b>
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
     </div>
 
  <!--header------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="header">
         <br><br>
-        <img src="img/eigen logo.png"style="height: 200px;">
+        <img src="img/eigen logo.png" style="width: 50vh;" >
     </div>
 
  <!--main------------------------------------------------------------------------------------------------------------------------------------------->
@@ -35,8 +29,7 @@
     <div class="row">
         <div class="side">
             <h2>About Me</h2>
-            <!--<h5>Photo of me:</h5>-->
-            <img class="profielfoto" style="height:200px;" src="img/Ward_Sabbe.jpg">
+            <img class="profielfoto" style="width:100vh;" src="img/Ward_Sabbe.jpg">
             <p>Hey, I'm an industrial product desginer graduated at Howest 2022. 
                 Now I am studying for my masters degree in Industrial Design at Ugent, campus Kortrijk. </p><br>
             <h3>Skills</h3>
@@ -63,40 +56,25 @@
             
             <h2>Education</h2>
                 
-                <a href="https://www.vtiwaregem.eu/"><img class="scholen" style="height: 170px;" src="img/vti_logo.png"></a>
+                <a href="https://www.vtiwaregem.eu/"><img class="scholen" style="width:20vh;" src="img/vti_logo.png"></a>
                 <h4>High School, Electronics, Electricity VTI Waregem </h4> <p>2013-2019<br>A technical education with an emphasis on electricity, electronics <br><br><br>
 
-                <a href="https://www.howest.be/nl/zoeken?search=ipo"><img class="scholen" style="height:140px;;" src="img/Howest.png" alt="Image 2"></a>
+                <a href="https://www.howest.be/nl/zoeken?search=ipo"><img class="scholen" style="width:40vh;" src="img/Howest.png" alt="Image 2"></a>
                 <h4>Bachelor, Industrial product design Howest Kotrijk</h4> <p>2019-2022<br>An education with an eye for product manufacturing, design and sustainability<br><br><br>
         
-            <a href="https://www.ugent.be/campus-kortrijk/nl/opleidingen/industrieel-ontwerpen"><img class="scholen" style="height:170px;;" src="img/logo_ugent.png" alt="Image 2"></a>
+            <a href="https://www.ugent.be/campus-kortrijk/nl/opleidingen/industrieel-ontwerpen"><img class="scholen" style="width:30vh;" src="img/logo_ugent.png" alt="Image 2"></a>
             <h4>Master, Industrial design Ugent Kotrijk</h4> <p>2022-now<br>An education with an eye for product manufacturing, sustainability and engineering<br>           
         </div>
-        <script>
-            function darkMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "dark-mode";
-            }
-            function lightMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "light-mode";
-            }
-        </script>
+
+        <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="footer">
+            <script>$(function () { $(".footer").load("footer.html"); });</script>
+        </div>
 
 
+        <script src="toggle.js"></script>
     </div>
 
- <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
-
- <div class="footer">
-    
-    <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-    <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-    <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-</div>
-
-</body>
 
 </html>

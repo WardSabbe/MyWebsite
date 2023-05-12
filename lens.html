@@ -6,27 +6,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
- <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="navbarproject">
-        <a href="https://www.instagram.com/ws_designandmore/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
-        <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
-        <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
-        <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="index.html">Home</a>
-        <b onclick="darkMode()">Darkmode</b>
-        <b onclick="lightMode()">Lightmode</b>
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
     </div>
  <!--main------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="row">
-        <div class="sideproject">
-            <img src="img/eigen logo.svg"style="height:320px;">
+        <div class="sideproject"><br><br>
+            <img src="img/eigen logo.png" style="width: 90%;" position: center;>
             <h1>A concept for a smart lens case</h1> 
             <p> This case is a practical choice for any lifestyle because of its 
                 slim and portable design, which not only shields your lens from dust 
@@ -41,39 +35,24 @@
 
         <div class="main">
             
-                <img style="height: 600px;"src="img/lens4.jpg">
-	            <img style="height: 600px;"src="img/lens2.jpg">
-	            <img style="height: 600px;"src="img/lens3.jpg">
-                <img style="height: 600px;"src="img/lens1.jpg">
-                <img style="height: 600px;"src="img/lens6.jpg">
-                <img style="height: 400px;"src="img/lens7.png">
-                <img style="height: 400px;"src="img/lens5.png">  
+                <img style="width: 100vh;"src="img/lens4.jpg">
+	            <img style="width: 100vh;"src="img/lens2.jpg">
+	            <img style="width: 100vh;"src="img/lens3.jpg">
+                <img style="width: 100vh;"src="img/lens1.jpg">
+                <img style="width: 100vh;"src="img/lens6.jpg">
+                <img style="width: 100vh;"src="img/lens7.png">
+                <img style="width: 100vh;"src="img/lens5.png">  
         </div>
-        <script>
-            function darkMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "dark-mode";
-            }
-            function lightMode() {
-                var element = document.body;
-                var content = document.getElementById("DarkModetext");
-                element.className = "light-mode";
-            }
-        </script>
+
+        <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="footer">
+            <script>$(function () { $(".footer").load("footer.html"); });</script>
+        </div>
 
 
+        <script src="toggle.js"></script>
     </div>
-
- <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
-
- <div class="footer">
-    
-    <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-    <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-    <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-    <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-</div>
 
 </body>
 

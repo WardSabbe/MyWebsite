@@ -2,78 +2,41 @@
 <html lang="en">
 
 <head>
-    <title>Website_About_Ward</title>
+    <title>title</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
 
- <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--navigatie------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <div class="navbar">
-        <a href="https://www.instagram.com/ws_designandmore/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
-        <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
-        <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
-        <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="index.html">Home</a>
+    <div class="navbarproject">
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
     </div>
-
- <!--header------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <div class="header">
-        <img src="img/eigen logo.svg"style="height:320px;">
-    </div>
-
- <!--main------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--main------------------------------------------------------------------------------------------------------------------------------------------->
 
     <div class="row">
-        <div class="side">
-            <h2>About Me</h2>
-            <!--<h5>Photo of me:</h5>-->
-            <img class="fakeimg" style="height:200px;" src="img/Ward_Sabbe.jpg">
-            <p>Hey, I'm an industrial product desginer graduated at Howest 2022. 
-                Now I am studying for my masters degree in Industrial Design at Ugent, campus Kortrijk. </p><br>
-            <h3>Skills</h3>
-            <p>-3D printing<br>-Photography<br></p>
-            <h3>Tools</h3>
-            <img class="icons" style="height:20px;" src="img/light.png"> Lightroom <br>
-            <img class="icons" style="height:20px;" src="img/photoshop.png"> Photoshop <br>
-            <img class="icons" style="height:20px;" src="img/illustrator.png"> Illustrator <br>
-            <img class="icons" style="height:20px;" src="img/indesign.png"> Indesign <br>
-            <img class="icons" style="height:20px;" src="img/pr.png"> Premiere Pro <br>
-            <img class="icons" style="height:20px;" src="img/cd.png"> XD <br>
-            <img class="icons" style="height:20px;" src="img/ink.png"> Inkscape <br>
-            <img class="icons" style="height:20px;" src="img/Fusion360.png"> Fusion360 <br>
-            <img class="icons" style="height:20px;" src="img/NX-Logo.svg"> Siemens NX <br>
-            <img class="icons" style="height:20px;" src="img/office.png"> Office 365 <br>
-            <img class="icons" style="height:20px;" src="img/notion.png"> Notion <br>
-            <img class="icons" style="height:20px;" src="img/arduino.png"> Arduino <br>
-            <img class="icons" style="height:20px;" src="img/c++.png"> C++ <br>
-            <img class="icons" style="height:20px;" src="img/grasshopper.jfif"> Grasshopper <br>
-            <br><br><br>
+        <div class="sideproject"><br><br>
+            <img src="img/eigen logo.png" style="width: 90%;" position: center;>
+
         </div>
 
         <div class="main">
-
-            <h2>Project 1</h2>
             
         </div>
 
+        <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
 
+        <div class="footer">
+            <script>$(function () { $(".footer").load("footer.html"); });</script>
+        </div>
+
+
+        <script src="toggle.js"></script>
     </div>
-
- <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
-
- <div class="footer">
-    
-    <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-    <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-    <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-    <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-</div>
 
 </body>
 

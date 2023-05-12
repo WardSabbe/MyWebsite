@@ -75,10 +75,12 @@ body {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  
   text-decoration: none;
   font-size: 15px;
 }
+.navbarproject b{padding: 5px 5px;}
+.navbarproject a{padding: 14px 20px;}
 
 .navbar {
   overflow: hidden;
@@ -119,6 +121,10 @@ body {
 .navbarproject b:active {
   background-color: rgb(255, 255, 255,0.5);;
   color: black;
+}
+/*--verbergt de dark mode----------------------------------------------------------------------*/
+#light-image {
+  display: none;
 }
 
 /*--Column container----------------------------------------------------------------------*/
@@ -170,8 +176,7 @@ body {
 }
 
 .sideproject {
-  flex: 10%;
-  width: 20%;
+  flex: 15%;
   background-color: var(--bg-color-side);
   color: var(--text-color);
   padding: 20px;
@@ -184,7 +189,7 @@ body {
 /*---------------------------------------------------------------------------------------*/
 
 .main {
-  width: 80%;
+  flex: 75%;
   /*color: #ffffff;
   background-color: rgb(70, 70, 70);*/
   color: var(--text-color);
@@ -201,22 +206,15 @@ body {
   /*color: white;*/
 }
 
-.mainleeg {
-  float: right;
-  width: 20%;
-  padding: 10px;
-  color: white;
-}
 
 .mainproject {
-  -ms-flex: 65%;
-  flex: 75%;
+  flex: 80%;
   /*background-color: rgb(44, 44, 44);*/
   color: var(--text-color);
   background-color: var(--bg-color-main);
   padding: 20px 60px;
   font-size: 15px;
-  width: 70%;
+
 }
 
 /*.sidde {
@@ -391,90 +389,6 @@ img {
   text-align: center;
 }
 
-/*.gegevens p {
-  padding-left: 30%;
-  font-size: x-large;
-}
-
-#tekst {
-  text-align: center;
-}
-
-.contactboxthing {
-  border-radius: 5px;
-  background-color: #ffffff;
-  padding: 10px;
-
-}
-
-.col1 {
-  float: right;
-  width: 50%;
-  margin-top: 6px;
-  padding: 20px;
-}
-
-.col2 {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-
-.gegevens p {
-  padding-left: 30%;
-  font-size: x-large;
-}
-
-form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 180px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-form input,
-form textarea {
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-form textarea {
-  height: 150px;
-}
-
-form input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-  background-color: #666;
-}*/
-
-
-/*.column {
-  width: 48%;
-}*/
-
-
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {
@@ -484,6 +398,17 @@ form input[type="submit"]:hover {
   .side {
     max-width: 100%;
   }
+  .sideproject {
+    max-width: 100%;
+  }
+
+  .mainproject {
+    max-width: 100%;
+  }
+  .footer{
+    max-width: 100%;
+  }
+  .maintext{max-width: 100%;}
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -492,6 +417,7 @@ form input[type="submit"]:hover {
     float: none;
     width: 100%;
   }
+
 }
 
 
@@ -510,54 +436,6 @@ form input[type="submit"]:hover {
 }
 
 
-
-
-
-
-.game{
-  width: 90%;
-  height: 200px;
-  border: 1px solid black;
-  margin: auto;
-}
-
-#character{
-  width: 20px;
-  height: 50px;
-  background-color: rgb(61, 61, 61);
-  position:relative;
-  top: 150px;
-}
-
-.animate{
-  animation: jump 0.3s linear;
-}
-
-@keyframes jump{
-  0%{top: 150px;}
-  30%{top: 100px;}
-  70%{top: 100px;}
-  100%{top: 150px;}
-}
-
-#block{
-  background-color: rgb(0, 0, 0);
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: 130px;
-  left: 100%;
-  animation: block 1s infinite linear;
-}
-
-@keyframes block{
-  0%{left: 100%}
-  100%{left: -20px}
-}
-
-
-
-
 #mazeContainer {
   top: 15px;
   opacity: 0;
@@ -574,7 +452,7 @@ form input[type="submit"]:hover {
 input, select {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.30);
-  height: 45px;
+  height: 35px;
   width: 150px;
   padding: 10px;
   border: none;
@@ -665,4 +543,3 @@ margin: auto;
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');

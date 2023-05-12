@@ -6,22 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 
 
 <body>
 
-    <div class="navbar">
-        <a href="https://www.instagram.com/ws_designandmore/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
-        <a href="https://github.com/WardSabbe/MyWebsite">Github</a>
-        <a href="https://www.youtube.com/@user-tj1el9uo1m/videos">Youtube</a>
-        <a href="https://www.pinterest.com/wardsabbe/">Pinterest</a>
-        <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-        <a href="index.html">Home</a>
-        <b onclick="darkMode()">Darkmode</b>
-        <b onclick="lightMode()">Lightmode</b>
-    </div>
+    <div class="navbarproject">
+        <script>$(function(){$(".navbarproject").load("navbar.html");});</script>
+     </div>
 
     <!--shift+alt+f voor auto align-->
 
@@ -91,7 +85,6 @@
                     <a href="project2 - kopie (3).html"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/foto_madagascar.jpg" ></a>
                     -->
                 </div>
-                <div class="mainleeg"></div>
 
             </div>
 
@@ -231,30 +224,12 @@
         </div>
     </div>-->
 
-
     <div class="footer">
+        <script>$(function(){$(".footer").load("footer.html");});</script>
+     </div>
 
-        <a href="telto:+32 489 77 59 31"> Gsm: +32 489 77 59 31</a>
-        <a href="mailto:wardsabbe02@hotmail.com">Mail: wardsabbe02@hotmail.com</a>
-        <a href="https://www.linkedin.com/in/ward-sabbe-939735209/">Linkedin</a>
-        <!--<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">More info</a></p>-->
-
-
-
-    </div>
-    <script>
-        function darkMode() {
-            var element = document.body;
-            var content = document.getElementById("DarkModetext");
-            element.className = "dark-mode";
-        }
-        function lightMode() {
-            var element = document.body;
-            var content = document.getElementById("DarkModetext");
-            element.className = "light-mode";
-        }
-    </script>
-
+<div>
+    <script src="toggle.js"></script>
 </body>
 
 </html>
