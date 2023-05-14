@@ -397,7 +397,17 @@ img {
 }
 
 /*---------------------------------------------------------------------------------------*/
+.containerfotoprj {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.img-fluid {
+  max-width: 60%;
+  height: auto;
+  object-fit: contain;
+  flex: 1 0 auto;
+}
 
 /* waarin projcten komen bij de random projecten*/
 .random1deel {
@@ -474,13 +484,14 @@ img {
   display: inline-block;
   margin: auto;
   border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 #mazeContainer #mazeCanvas {
   margin: 15px;
   display: block;
   border: solid 2px var(--bg-color-side);
-  height: 400px;
+  height: 80vh;
 }
 
 input,
@@ -538,22 +549,25 @@ select:focus {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.70);
   z-index: 1;
 }
 
 #Message-Container #message {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
+  margin-left: -300px;
+  margin-top: -300px;
 }
 
 #page {
   background-color: var(--bg-color-maze);
+  background-image: url(walle-background.jpg);
+  background-size: cover;
+  background-position: 35%;
   text-align: center;
   height: auto;
   width: auto;
@@ -563,7 +577,7 @@ select:focus {
 #page #menu {
   margin: auto;
   padding: 10px;
-  height: 65px;
+  height: 95vh;
 }
 
 #page #menu h1 {
@@ -586,8 +600,4 @@ select:focus {
 .border {
   border: 10px var(--bg-color-side);
   border-radius: 10px;
-}
-
-#instructions {
-  margin-top: 425px;
 }
