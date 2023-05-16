@@ -144,6 +144,11 @@ body {
 /*--verbergt de dark mode----------------------------------------------------------------------*/
 #light-image {
   display: none;
+  height: 34px
+}
+
+#dark-image {
+  height: 34px
 }
 
 /*--Column container----------------------------------------------------------------------*/

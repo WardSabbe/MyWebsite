@@ -1,7 +1,7 @@
 
 // Maak een audio-element aan
-var audio = new Audio('song2.mp3');
-var audio2 = new Audio('song1.mp3');
+var audio = new Audio('sound/song2.mp3');
+var audio2 = new Audio('sound/song1.mp3');
 
 /*// Koppel event listeners aan de pijltoetsen
 document.addEventListener('keydown', function(event) {
