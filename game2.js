@@ -568,7 +568,7 @@ window.onload = function () {
   };
 
   finishSprite = new Image();
-  finishSprite.src = "img/eve.png" +
+  finishSprite.src = "img/whitebot.png" +
     "?" +
     new Date().getTime();
   finishSprite.setAttribute("crossOrigin", " ");
