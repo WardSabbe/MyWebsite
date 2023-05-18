@@ -234,16 +234,6 @@ body {
 }
 
 
-.mainproject {
-  flex: 80%;
-  /*background-color: rgb(44, 44, 44);*/
-  color: var(--text-color);
-  background-color: var(--bg-color-main);
-  padding: 20px 60px;
-  font-size: 15px;
-
-}
-
 /*.sidde {
   padding: 30;
   flex: 30%;
@@ -385,8 +375,8 @@ img {
 
 .projectrow10 {float: left;width: 100%;height: 100%;border-radius: 10px;padding: 3px;}*/
 
-/*3 rows op de home pagina onder intro*/
-.projectrow2,
+/*3 rows op de home pagina onder intro en 1 in random projts*/
+.projectrow1,.projectrow2,
 .projectrow3 {
   width: 49%;
   border-radius: 10px;
@@ -395,6 +385,7 @@ img {
   align-items: center;
   padding: 3px;
 }
+
 
 .projectrowtussen {
   float: left;
@@ -425,15 +416,18 @@ img {
 }
 
 /* waarin projcten komen bij de random projecten*/
+
+
 .random1deel {
-  float: left;
+  float: center;
   margin: 1%;
-  width: 46%;
+  width: 600px;;
   border-radius: 10px;
   background-color: var(--bg-color-row);
-  padding: 10px;
+  padding: 20px;
   color: black;
   text-align: center;
+  
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -444,7 +438,6 @@ img {
 
   .side,
   .sideproject,
-  .mainproject,
   .footer,
   .maintext {
     max-width: 100%;
@@ -457,6 +450,9 @@ img {
   .navbarproject a {
     padding: 14px 10px;
   }
+  .random1deel {
+    width: 100%;}
+
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
