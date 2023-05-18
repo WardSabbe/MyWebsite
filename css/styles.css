@@ -282,18 +282,28 @@ body {
 
 .footer {
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--bg-color-nav);
   width: 100%;
 }
 
 .footer a {
   float: center;
   display: block;
-  color: white;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 20px;
   text-decoration: wavy;
   font-size: 15px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.footer p{
+  color: var(--text-color);
+  padding: 4px;
+  text-align: center;
+  font-weight: bolder;
+
 }
 
 .footer a:hover {
@@ -432,28 +442,20 @@ img {
     flex-direction: column;
   }
 
-  .side {
-    max-width: 100%;
-  }
-
-  .sideproject {
-    max-width: 100%;
-  }
-
-  .mainproject {
-    max-width: 100%;
-  }
-
-  .footer {
-    max-width: 100%;
-  }
-
+  .side,
+  .sideproject,
+  .mainproject,
+  .footer,
   .maintext {
     max-width: 100%;
   }
 
   #page #view {
     top: 105px;
+  }
+
+  .navbarproject a {
+    padding: 14px 10px;
   }
 }
 

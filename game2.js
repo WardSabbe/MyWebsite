@@ -7,7 +7,7 @@ var audio2 = new Audio('sound/song1.mp3');
 document.addEventListener('keydown', function(event) {
   if (event.code === 'ArrowUp' || event.code === 'ArrowDown' || event.code === 'ArrowLeft' || event.code === 'ArrowRight') {
     // Speel de audio af wanneer een pijltoets wordt ingedrukt
-    audio.play();
+    audio.play();https://github.com/devression/Maze-Game
   }
 });*/
 
