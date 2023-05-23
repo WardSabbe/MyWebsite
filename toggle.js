@@ -24,9 +24,15 @@ function toggleMode() {
 var mode = localStorage.getItem("mode");
 if (mode === "dark") {
   document.body.classList.add("dark-mode");
+  document.getElementById("light-image").style.display = "none";
   document.getElementById("dark-image").style.display = "block";
-} else {
+} else if (mode === "light") {
   document.body.classList.add("light-mode");
+  document.getElementById("dark-image").style.display = "none";
+  document.getElementById("light-image").style.display = "block";
+} else {
+  // Als er geen opgeslagen modus is, wordt de standaardmodus weergegeven
+  document.body.classList.add("light-mode");
+  document.getElementById("dark-image").style.display = "none";
   document.getElementById("light-image").style.display = "block";
 }
-
