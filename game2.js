@@ -1,7 +1,7 @@
 
 // Maak een audio-element aan
 var audio = new Audio('sound/song2.mp3');
-var audio2 = new Audio('sound/song1.mp3');
+var audio2 = new Audio('sound/lied1.mp3');
 
 /*// Koppel event listeners aan de pijltoetsen
 document.addEventListener('keydown', function(event) {
@@ -47,7 +47,7 @@ function changeBrightness(factor, sprite) {
 
 function displayVictoryMess(moves) {
   audio.pause();
-  audio2.currentTime = 20; 
+  audio2.currentTime = 0; 
   audio2.play();
   if (moves > 99) {
     document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps. What did you do hahaha ?!";
@@ -101,7 +101,7 @@ function Maze(Width, Height) {
     return mazeMap;
   };
   this.startCoord = function () {
-    audio.currentTime = 0; // stelt de huidige afspeeltijd in op 0 om opnieuw te beginnen
+    audio.currentTime = 13; // stelt de huidige afspeeltijd in op 0 om opnieuw te beginnen
     audio.play();
     audio2.pause();
     return startCoord;

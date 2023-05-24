@@ -1,36 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head><!--initaileseren en linken bibs-->
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        window.addEventListener('load', function() {
-          alert("Hallo. Dit is mijn site. Hij onthoud wat je kiest als light of drarkmodus. Die kies je links bovenaan. Mijn robot en spel vind je onder random projects");
-        });
-      </script>
 </head>
 
 
 <body>
 
-    <div class="navbarproject">
-        <script>$(function(){$(".navbarproject").load("navbar.html");});</script>
-     </div>
+    <!--er wordt een class aangemaakt navbarproject. door $(document).ready(function () { ... }); 
+        wordt een project geladen (navbar),wnr  DOM (Document Object Model) klaar is, in navbarproject-->
 
-    <!--shift+alt+f voor auto align-->
+    <div class="navbarproject"><!--ga naar -->
+        <script>$(function () { $(".navbarproject").load("navbar.html"); });</script>
+    </div>
 
     <div class="header">
         <p><br></p><img src="img/eigen logo.png" style="width:90vh;">
         <h1>Product Designer <div class="roller">
                 <span id="rolltext">
-                    sustainable design<br />
-                    Electronics<br />
-                    Photography<br />
-                    minimalism<br />
+                    Sustainable design<br/>
+                    Electronics<br/>
+                    Photography<br/>
+                    Minimalism<br/>
             </div>
         </h1>
 
@@ -46,51 +42,43 @@
         </div>
 
         <div class="main">
-            <div class="Intro">
-                <div class="maintext">
-                    <h2>Who is Ward?</h2>
-                    <!--<h5>Title description, feb 21, 2023</h5>
+
+            <div class="maintext">
+                <h2>Who is Ward?</h2>
+                <!--<h5>Title description, feb 21, 2023</h5>
                     <div class="fakeimg" style="height:200px;">Image</div>-->
 
-                    <p> Meet Ward, a young designer with a true passion for design and a special interest in lighting
-                        design.
-                        From a young age, Ward has been fascinated with how lighting can transform a space and evoke
-                        emotions in people.
-                        This passion has driven him to pursue a career in design,
-                        and he has proven himself to be a highly motivated and dedicated individual. <br><br>
-                        Ward has an exceptional eye for detail and a natural talent for visualizing design concepts.
-                        He has a deep understanding of the latest design trends and is constantly researching new
-                        materials and
-                        techniques to incorporate into his work. He has a strong foundation in traditional design
-                        principles,
-                        but is also comfortable with cutting-edge technologies and digital design tools.<br><br>
-                        When it comes to lighting design, Ward truly shines. He has a unique ability to create lighting
-                        concepts
-                        that do not only look beautiful, but also have a practical purpose. Whether it's designing a
-                        lighting scheme for a
-                        retail space or creating a custom light fixture for a home, Ward knows how to create lighting
-                        that enhances the user
-                        experience and brings a space to life.<br><br>
-                        But what really sets Ward apart is his passion and drive to succeed. He is always seeking out
-                        new challenges and
-                        opportunities to push himself creatively, and he thrives in a collaborative environment where he
-                        can learn from others
-                        and share his ideas. He is highly flexible and can work effectively under pressure: an asset to
-                        any team.<br><br>
-                        In short, Ward is a highly talented and motivated designer with a passion for lighting design.
-                        <br><br><br><br>
-                    </p>
-
-
-                    <!--<a href="school.html"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/school.jpg" ></a>
-                    <a href="project1.html"><img class="fakeimg2" style="position: 50%; height:200px;width: 300px;" src="img/klok4.jpeg" ></a>
-                    <a href="project2.html"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/bap01.jpg" ></a>
-                    <a href="project3.html"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/lens2.JPG"></a>
-                    <a href="project2 - kopie (3).html"><img class="fakeimg2" style="height:200px;width: 300px;;" src="img/foto_madagascar.jpg" ></a>
-                    -->
-                </div>
+                <p> Meet Ward, a young designer with a true passion for design and a special interest in lighting
+                    design.
+                    From a young age, Ward has been fascinated with how lighting can transform a space and evoke
+                    emotions in people.
+                    This passion has driven him to pursue a career in design,
+                    and he has proven himself to be a highly motivated and dedicated individual. <br><br>
+                    Ward has an exceptional eye for detail and a natural talent for visualizing design concepts.
+                    He has a deep understanding of the latest design trends and is constantly researching new
+                    materials and
+                    techniques to incorporate into his work. He has a strong foundation in traditional design
+                    principles,
+                    but is also comfortable with cutting-edge technologies and digital design tools.<br><br>
+                    When it comes to lighting design, Ward truly shines. He has a unique ability to create lighting
+                    concepts
+                    that do not only look beautiful, but also have a practical purpose. Whether it's designing a
+                    lighting scheme for a
+                    retail space or creating a custom light fixture for a home, Ward knows how to create lighting
+                    that enhances the user
+                    experience and brings a space to life.<br><br>
+                    But what really sets Ward apart is his passion and drive to succeed. He is always seeking out
+                    new challenges and
+                    opportunities to push himself creatively, and he thrives in a collaborative environment where he
+                    can learn from others
+                    and share his ideas. He is highly flexible and can work effectively under pressure: an asset to
+                    any team.<br><br>
+                    In short, Ward is a highly talented and motivated designer with a passion for lighting design.
+                    <br><br><br><br>
+                </p>
 
             </div>
+
 
             <div class="project">
 
@@ -101,7 +89,8 @@
                             <div class="overlay">
                                 <p>Education</p>
                             </div>
-                    </div></a>
+                        </a>
+                    </div>
 
                     <div class="projectcontainer">
                         <img src="img/klok40.jpeg"></a>
@@ -196,44 +185,14 @@
 
     </div>
 
-
-
     <!--footer------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!--<div class="contactboxthing">
-
-        <div class="col2">
-
-            <div class="gegevens">
-
-            </div>
-
-            <form action="mailto:wardsabbe02@hotmail.com" method="post">
-                <label for="naam">Naam</label>
-                <input type="text" id="naam" name="naam" placeholder="Jouw naam.." required>
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" placeholder="Jouw email.." required>
-
-                <label for="onderwerp">Onderwerp</label>
-                <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp.." required>
-
-                <label for="bericht">Bericht</label>
-                <textarea id="bericht" name="bericht" placeholder="Schrijf iets.." style="height:200px"
-                    required></textarea>
-
-                <input type="submit" value="Verzenden">
-            </form>
-
-        </div>
-    </div>-->
-
     <div class="footer">
-        <script>$(function(){$(".footer").load("footer.html");});</script>
-     </div>
+        <script>$(function () { $(".footer").load("footer.html"); });</script>
+    </div>
 
-<div>
-    <script src="toggle.js"></script>
+    <div>
+        <script src="toggle.js"></script>
 </body>
 
 </html>
