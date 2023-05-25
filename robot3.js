@@ -1,7 +1,6 @@
-
 function setup() {
-    x = 750;
-    y = 650;
+    x = 550;
+    y = 500;
     var canvas3 = createCanvas(x, y);
     canvas3.parent('robot3');
     background(255);
