@@ -49,15 +49,10 @@ function displayVictoryMess(moves) {
   audio.pause();
   audio2.currentTime = 0; 
   audio2.play();
-  if (moves > 99) {
-    document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps. What did you do hahaha ?!";
-    toggleVisablity("Message-Container");
-  }
 
-  if (moves < 100) {
     document.getElementById("moves").innerHTML = "You Moved " + moves + " Steps.";
     toggleVisablity("Message-Container");
-  }
+ 
 }
 
 function toggleVisablity(id) {
