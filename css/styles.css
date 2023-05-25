@@ -318,7 +318,8 @@ img {
 
 /*---------------------------------------------------------------------------------------*/
 
-.project {/*letterlijke container waar alles instaat vaan main projecten*/
+.project {
+  /*letterlijke container waar alles instaat vaan main projecten*/
   width: 100%;
 }
 
@@ -371,7 +372,7 @@ img {
     float: none;
     width: 100%;
   }
-  
+
 
 }
 
@@ -469,17 +470,15 @@ select:focus {
 }
 
 #Message-Container #message {
-  width: 600px;
-  height: 600px;
+  width: 90%;
+  height: auto;
+  max-width: 600px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-@media (max-width: 700px) {
- 
-}
 
 #page {
   background-color: var(--bg-color-maze);
@@ -543,14 +542,11 @@ select:focus {
   .overlay {
     font-size: 20px;
   }
+
   #mazeContainer #mazeCanvas {
     width: 80vw;
-    height:80vw;
+    height: 80vw;
   }
 
-  #Message-Container #message {
-    width: 90%;
-    height: auto;
-    max-width: 600px;
-  }
+
 }
