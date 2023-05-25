@@ -236,7 +236,7 @@ body {
 .footer a {
   float: center;
   display: block;
-  color: var(--text-color);
+  color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: wavy;
@@ -246,7 +246,7 @@ body {
 }
 
 .footer p {
-  color: var(--text-color);
+  color: white;
   padding: 4px;
   text-align: center;
   font-weight: bolder;
