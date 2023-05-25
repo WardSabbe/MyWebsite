@@ -1,13 +1,13 @@
 
 // Maak een audio-element aan
-var audio = new Audio('sound/song2.mp3');
-var audio2 = new Audio('sound/lied1.mp3');
+var audio = new Audio('sound/lied1.mp3');
+var audio2 = new Audio('sound/lied2.mp3');
 
 /*// Koppel event listeners aan de pijltoetsen
 document.addEventListener('keydown', function(event) {
   if (event.code === 'ArrowUp' || event.code === 'ArrowDown' || event.code === 'ArrowLeft' || event.code === 'ArrowRight') {
     // Speel de audio af wanneer een pijltoets wordt ingedrukt
-    audio.play();https://github.com/devression/Maze-Game
+    audio.play();https://github.com/devressioty /Maze-Game
   }
 });*/
 
@@ -15,7 +15,7 @@ function rand(max) {
   return Math.floor(Math.random() * max);
 }
 
-function shuffle(a) {
+function shuffle(a) { 
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
