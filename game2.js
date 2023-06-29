@@ -11,11 +11,12 @@ document.addEventListener('keydown', function(event) {
   }
 });*/
 
+
 function rand(max) {
   return Math.floor(Math.random() * max);
 }
 
-function shuffle(a) { 
+function shuffle(a) { // Implementatie van de Fisher-Yates shuffle-algoritme om een array willekeurig te schudden
   for (let i = a.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]];
@@ -23,7 +24,7 @@ function shuffle(a) {
   return a;
 }
 
-function changeBrightness(factor, sprite) {
+function changeBrightness(factor, sprite) {// Functie om de helderheid van een sprite aan te passen
   var virtCanvas = document.createElement("canvas");
   virtCanvas.width = 500;
   virtCanvas.height = 500;

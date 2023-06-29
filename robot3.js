@@ -61,6 +61,7 @@ function draw() {
    // Positie van de translatie
    let translateX = (x - 400) / 2;
    let translateY = (y - 400) / 2;
+   
  
    // Pas de translatie toe op de oorspronkelijke coördinaten
    let transformedLeftEyeX = originalLeftEyeX;
